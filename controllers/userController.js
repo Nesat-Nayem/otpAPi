@@ -1,4 +1,3 @@
-// const bcrypt = require("bcryptjs");
 const userServices = require("../services/user.services");
 
 exports.otpLogin = (req, res, next) => {
@@ -8,7 +7,7 @@ exports.otpLogin = (req, res, next) => {
     }
     return res.status(200).send({
       message: "Success",
-      data: results
+      data: results,
     });
   });
 };
